@@ -23,5 +23,5 @@ for l in lines:
 
 keywordList.append('""')
 print("#ifdef INCLUDE_STATIC_KEYWORD_LIST")
-print("static char * _keywords = { "+",".join(keywordList)+" };")
+print("static char * _keywords[] = { "+",".join(keywordList)+" };")
 print("#endif")
