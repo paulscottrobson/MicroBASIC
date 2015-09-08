@@ -21,6 +21,8 @@ for l in lines:
 		print("#define KWD_"+l[len(keyword):].strip()+" ("+str(current)+")")
 		current = current + 1
 
+print("#define KEYWORD_END ("+str(current)+")")
+print("")
 keywordList.append('""')
 print("#ifdef INCLUDE_STATIC_KEYWORD_LIST")
 print("static char * _keywords[] = { "+",".join(keywordList)+" };")

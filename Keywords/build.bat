@@ -1,3 +1,3 @@
 @echo off
 python generate.py >keywords.h
-copy keywords.h ..\MicroBASICConsole
+copy keywords.h ..\Tokeniser
